@@ -8,15 +8,15 @@
 @Component
 struct BusinessCard {
   // ── 用户信息状态 ──────────────────────────────────
-  @State nickName: string = 'bxb'
+  @State nickName: string = '永雏塔菲'
   @State title: string = '全栈开发工程师 · 独立创作者'
-  @State signature: string = '用代码构建美好，以设计传递温度 🌸'
+  @State signature: string = '关注永雏塔菲谢谢喵 🌸'
   @State avatar: Resource = $r('app.media.startIcon')
   @State isFollowed: boolean = false
   @State followerCount: number = 1280
 
   // ── 用户标签 ──────────────────────────────────────
-  private tags: string[] = ['ArkTS', 'Flutter', 'React', 'UI/UX', '摄影']
+  private tags: string[] = ['1', '2', '3', '4', '5']
 
   /**
    * '关注'按钮点击处理
@@ -305,130 +305,6 @@ struct BusinessCard {
           })
           .alignItems(HorizontalAlign.Center)
           .margin({ top: -40 })
-
-          // ═══════════════════════════════════════════
-          // 底部信息区域
-          // ═══════════════════════════════════════════
-          Column({ space: 12 }) {
-            // ── 个人信息行 ──────────────────────────
-            Row({ space: 12 }) {
-              // 公司
-              Row({ space: 6 }) {
-                Text('🏢')
-                  .fontSize(16)
-                Column({ space: 2 }) {
-                  Text('所在公司')
-                    .fontSize(11)
-                    .fontColor('#aaaaaa')
-                  Text('星辰科技有限公司')
-                    .fontSize(14)
-                    .fontColor('#333333')
-                    .fontWeight(FontWeight.Medium)
-                }
-                .alignItems(HorizontalAlign.Start)
-              }
-
-              Divider()
-                .vertical(true)
-                .height(36)
-                .color('#e8e8e8')
-
-              // 位置
-              Row({ space: 6 }) {
-                Text('📍')
-                  .fontSize(16)
-                Column({ space: 2 }) {
-                  Text('所在地')
-                    .fontSize(11)
-                    .fontColor('#aaaaaa')
-                  Text('中国 · 杭州')
-                    .fontSize(14)
-                    .fontColor('#333333')
-                    .fontWeight(FontWeight.Medium)
-                }
-                .alignItems(HorizontalAlign.Start)
-              }
-            }
-            .width('100%')
-            .justifyContent(FlexAlign.Center)
-            .padding({ top: 4 })
-
-            Divider()
-              .width('100%')
-              .color('#f0f0f0')
-
-            // ── 社交链接 ────────────────────────────
-            Row({ space: 20 }) {
-              // GitHub
-              Column({ space: 4 }) {
-                Text('💻')
-                  .fontSize(24)
-                Text('GitHub')
-                  .fontSize(11)
-                  .fontColor('#888888')
-              }
-              .onClick(() => {
-                console.info('open github')
-              })
-
-              // 掘金
-              Column({ space: 4 }) {
-                Text('📝')
-                  .fontSize(24)
-                Text('掘金')
-                  .fontSize(11)
-                  .fontColor('#888888')
-              }
-              .onClick(() => {
-                console.info('open juejin')
-              })
-
-              // 微博
-              Column({ space: 4 }) {
-                Text('📱')
-                  .fontSize(24)
-                Text('微博')
-                  .fontSize(11)
-                  .fontColor('#888888')
-              }
-              .onClick(() => {
-                console.info('open weibo')
-              })
-
-              // 公众号
-              Column({ space: 4 }) {
-                Text('📢')
-                  .fontSize(24)
-                Text('公众号')
-                  .fontSize(11)
-                  .fontColor('#888888')
-              }
-              .onClick(() => {
-                console.info('open wechat')
-              })
-            }
-            .width('100%')
-            .justifyContent(FlexAlign.Center)
-            .padding({ top: 4 })
-
-            // ── 底部版权 ────────────────────────────
-            Text('✨ 交换名片 · 即刻相识 ✨')
-              .fontSize(12)
-              .fontColor('#cccccc')
-              .margin({ top: 8 })
-              .letterSpacing(2)
-          }
-          .width('90%')
-          .padding(20)
-          .backgroundColor('#FFFFFF')
-          .borderRadius(16)
-          .shadow({
-            radius: 8,
-            color: '#0d000000',
-            offsetY: 3
-          })
-          .alignItems(HorizontalAlign.Center)
-          .margin({ top: 16 })
         }
         .width('100%')
         .alignItems(HorizontalAlign.Center)
