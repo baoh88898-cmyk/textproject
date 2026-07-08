@@ -26,7 +26,7 @@ struct Index {
   @State title: string = '高级软件工程师'
   @State company: string = '华为技术有限公司'
   @State bio: string = '热爱编程，专注于鸿蒙应用开发与前端技术，拥有5年以上移动端开发经验。喜欢探索新技术，持续学习成长。'
-  @State avatar: Resource = $r('app.media.startIcon')
+  @State avatar: Resource = $r('app.media.avatar')
 
   // ── 编辑模式状态 ──────────────────────────────────
   @State isEditing: boolean = false
