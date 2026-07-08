@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 个人信息展示页面
  * 综合运用组件定义、状态管理与UI布局
  */
@@ -560,6 +560,44 @@ struct Index {
         Column({ space: 16 }) {
           // 头像区域
           this.AvatarSection()
+
+          // 名片导航卡片
+          Row({ space: 12 }) {
+            Column({ space: 4 }) {
+              Text('✨')
+                .fontSize(28)
+              Text('个人名片')
+                .fontSize(14)
+                .fontWeight(FontWeight.Medium)
+                .fontColor('#333333')
+            }
+            .alignItems(HorizontalAlign.Center)
+
+            Column({ space: 4 }) {
+              Text('精美卡片式设计 · 点击查看')
+                .fontSize(12)
+                .fontColor('#999999')
+              Text('包含头像、签名、关注按钮 ›')
+                .fontSize(12)
+                .fontColor('#667eea')
+            }
+            .alignItems(HorizontalAlign.Start)
+            .layoutWeight(1)
+
+            Text('→')
+              .fontSize(20)
+              .fontColor('#667eea')
+              .fontWeight(FontWeight.Bold)
+          }
+          .width('100%')
+          .padding(16)
+          .backgroundColor('#f8f5ff')
+          .borderRadius(12)
+          .border({ width: 1, color: '#efeaff' })
+          .shadow({ radius: 4, color: '#1A000000', offsetY: 2 })
+          .onClick(() => {
+            this.getUIContext().getRouter().pushUrl({ url: 'pages/BusinessCard' })
+          })
 
           // 统计卡片
           this.StatsCard()
