@@ -8,9 +8,9 @@
 @Component
 struct BusinessCard {
   // ── 用户信息状态 ──────────────────────────────────
-  @State nickName: string = '二店小儿'
-  @State title: string = '全栈开发工程师 · 独立创作者'
-  @State signature: string = '111'
+  @State nickName: string = 'ZMJQKA'
+  @State title: string = 'Let"go!!!!!!!!'
+  @State signature: string = '我是冠军🏆你是什么'
   @State avatar: Resource = $r('app.media.avatar')
   @State isFollowed: boolean = false
   @State followerCount: number = 1280
