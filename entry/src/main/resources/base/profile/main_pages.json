@@ -1,6 +1,11 @@
 {
   "src": [
     "pages/Index",
-    "pages/BusinessCard"
+    "pages/Login",
+    "pages/BusinessCard",
+    "pages/ProductList",
+    "pages/VideoPlayer",
+    "pages/CanvasAnimation",
+    "pages/Settings"
   ]
 }

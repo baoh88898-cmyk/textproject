@@ -10,13 +10,13 @@ struct BusinessCard {
   // ── 用户信息状态 ──────────────────────────────────
   @State nickName: string = 'ZMJQKA'
   @State title: string = 'Let"go!!!!!!!!'
-  @State signature: string = '我是冠军🏆你是什么'
+  @State signature: string = '我是冠军🏆你是什么O.o?'
   @State avatar: Resource = $r('app.media.avatar')
   @State isFollowed: boolean = false
   @State followerCount: number = 1280
 
   // ── 用户标签 ──────────────────────────────────────
-  private tags: string[] = ['1', '2', '3', '4', '5']
+  private tags: string[] = ['酱味大鸡', '', '', '', '']
 
   /**
    * '关注'按钮点击处理
